@@ -1,0 +1,31 @@
+n {
+  }
+  
+.status {
+  color: gray;
+}
+
+.query {
+  font-weight: bold;
+  color: blue;
+  margin-top: 0.5em;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+  white-space: pre;
+}
+
+.results {
+  font-family: monospace;
+  white-space: pre;
+}
+
+.header {
+  text-decoration: underline;
+}
+
+.value {
+  margin: 0.1em;
+}

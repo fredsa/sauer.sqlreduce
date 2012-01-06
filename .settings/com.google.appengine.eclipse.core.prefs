@@ -1,0 +1,18 @@
+#Fri Jan 06 13:46:59 PST 2012
+eclipse.preferences.version=1
+filesCopiedToWebInfLib=appengine-api-1.0-sdk-1.6.1.jar|appengine-api-labs-1.6.1.jar|appengine-jsr107cache-1.6.1.jar|jsr107cache-1.1.jar|google_sql.jar
+gaeDatanucleusEnabled=false
+gaeHrdEnabled=true
+gaeIsEclipseDefaultInstPath=true
+googleCloudSqlEnabled=true
+localDevMySqlEnabled=false
+prodDatabaseName=sqlreduce
+prodDatabasePassword=
+prodDatabaseUser=
+prodInstanceName=googlecom\:fredsa
+prodIsConfigured=true
+testDatabaseName=sqlreduce
+testDatabasePassword=
+testDatabaseUser=
+testInstanceName=googlecom\:fredsa
+testIsConfigured=true

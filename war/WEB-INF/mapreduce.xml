@@ -1,0 +1,67 @@
+<configurations>
+
+  <configuration name="SQL Migration Mapper">
+    <property>
+      <name>mapreduce.map.class</name>
+      <value>sqlreduce.server.DataMigratingMapper</value>
+    </property>
+    <property>
+      <name>mapreduce.mapper.shardcount</name>
+      <value>8</value>
+    </property>
+    <property>
+      <name>mapreduce.mapper.inputprocessingrate</name>
+      <value>1000</value>
+    </property>
+    <property>
+      <name>mapreduce.inputformat.class</name>
+      <value>com.google.appengine.tools.mapreduce.DatastoreInputFormat</value>
+    </property>
+    <property>
+      <name human="Entity Kind to Map Over">mapreduce.mapper.inputformat.datastoreinputformat.entitykind
+      </name>
+      <value template="optional">CUST_USAGE</value>
+    </property>
+  </configuration>
+
+  <configuration name="Delete Kind Mapper">
+    <property>
+      <name>mapreduce.map.class</name>
+      <value>sqlreduce.server.DeleteKindMapper</value>
+    </property>
+    <property>
+      <name>mapreduce.mapper.shardcount</name>
+      <value>8</value>
+    </property>
+    <property>
+      <name>mapreduce.mapper.inputprocessingrate</name>
+      <value>1000</value>
+    </property>
+    <property>
+      <name>mapreduce.inputformat.class</name>
+      <value>com.google.appengine.tools.mapreduce.DatastoreInputFormat</value>
+    </property>
+    <property>
+      <name human="Entity Kind to Map Over">mapreduce.mapper.inputformat.datastoreinputformat.entitykind
+      </name>
+      <value template="optional">CUST_USAGE</value>
+    </property>
+  </configuration>
+
+  <configuration name="TestMapper">
+    <property>
+      <name>mapreduce.map.class</name>
+      <value>sqlreduce.server.TestMapper</value>
+    </property>
+    <property>
+      <name>mapreduce.inputformat.class</name>
+      <value>com.google.appengine.tools.mapreduce.DatastoreInputFormat
+      </value>
+    </property>
+    <property>
+      <name human="Entity Kind to Map Over">mapreduce.mapper.inputformat.datastoreinputformat.entitykind
+      </name>
+      <value template="optional">CUST_USAGE</value>
+    </property>
+  </configuration>
+</configurations>
