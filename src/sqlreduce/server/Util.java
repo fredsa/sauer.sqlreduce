@@ -90,7 +90,7 @@ public class Util {
       value = "null";
     }
     if (value.length() > len) {
-      value = value.substring(0, len - 3) + "É";
+      value = value.substring(0, len - 3) + "...";
     }
     value += "                                                    ";
     value = value.substring(0, len);
